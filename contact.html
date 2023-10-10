@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-</head>
-<body>
-    <div>
+  </head>
+  <body>
+    <header>
+      <nav>
         <!--This is how to use an anchor tag and href-->
         <a href="./index.html">
-            <p>Home</p>
+          <p>Home</p>
         </a>
         <a href="./about.html">
-            <p>About</p>
+          <p>About</p>
         </a>
         <a href="#">
-            <p>Contact</p>
+          <p>Contact</p>
         </a>
-    </div>
-    <h2>Contact</h2>
-</body>
+      </nav>
+    </header>
+    <main>
+      <h2>Contact</h2>
+      <form action="" method="get">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="FirstName" id="firstname" autofocus spellcheck="true" required> 
+        <br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="LastName" id="lastname" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="Email" id="email" required>
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" min="1970-01-01" max="2006-01-01" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="Password" id="password" required>
+        <br>
+        <label for="upload">Upload your Documents:</label>
+        <input type="file" name="Upload your Documents" id="upload">
+        <br>
+        <label for="country">Select your country:</label>
+        <select name="Country" id="country">
+            <option value="" disabled selected>---Select your Country---</option>
+            <optgroup label="Africa">
+                <option value="egypt">Egypt</option>
+                <option value="kenya">Kenya</option>
+                <option value="nigeria">Nigeria</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="germany">Germany</option>
+                <option value="scotland">Scotland</option>
+                <option value="england">England</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="">Choose your Language(s)</label>
+        <br>
+        <label for="yoruba">Yoruba</label>
+        <input type="checkbox" name="languague" id="yoruba">
+        <label for="hausa">Hausa</label>
+        <input type="checkbox" name="languague" id="hausa">
+        <label for="igbo">Igbo</label>
+        <input type="checkbox" name="languague" id="igbo">
+        <label for="english">English</label>
+        <input type="checkbox" name="languague" id="english">
+        <br>
+        <label for="">Choose your Gender</label>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <br>
+        <fieldset>
+            <legend>Search</legend>
+            <input type="search" name="" id="" style="border: none; width: 95%; outline: none;">
+            <button>Submit</button>
+        </fieldset>
+        <br>
+        <button>Submit</button>
+        <input type="submit" value="Sign Up" name="" id="">
+      </form>
+    </main>
+    <footer></footer>
+  </body>
 </html>
