@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <header>
+      <h2 class="logo">Logo.</h2>
       <nav>
         <!--This is how to use an anchor tag and href-->
         <a href="./index.html">
-          <p>Home</p>
+          <p class="navlink">Home</p>
         </a>
         <a href="./about.html">
-          <p>About</p>
+          <p class="navlink">About</p>
         </a>
         <a href="#">
-          <p>Contact</p>
+          <p class="navlink">Contact</p>
         </a>
       </nav>
     </header>
@@ -24,13 +26,13 @@
       <h2>Contact</h2>
       <form action="" method="get">
         <label for="firstname">First Name:</label>
-        <input type="text" name="FirstName" id="firstname" autofocus spellcheck="true" required> 
+        <input type="text" name="FirstName" placeholder="Greatness" id="firstname" autofocus spellcheck="true" required> 
         <br>
         <label for="lastname">Last Name:</label>
-        <input type="text" name="LastName" id="lastname" required>
+        <input type="text" name="LastName" placeholder="Nwafor" id="lastname" required>
         <br>
         <label for="email">Email:</label>
-        <input type="email" name="Email" id="email" required>
+        <input type="email" name="Email" placeholder="someone@example.com" id="email" required>
         <br>
         <label for="dob">Date of Birth:</label>
         <input type="date" name="dob" id="dob" min="1970-01-01" max="2006-01-01" required>
@@ -79,6 +81,9 @@
             <input type="search" name="" id="" style="border: none; width: 95%; outline: none;">
             <button>Submit</button>
         </fieldset>
+        <br>
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
         <br>
         <button>Submit</button>
         <input type="submit" value="Sign Up" name="" id="">

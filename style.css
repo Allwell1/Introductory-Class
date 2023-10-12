@@ -1,0 +1,39 @@
+* {
+  /*border: 1px solid red;*/
+  margin: 0;
+  padding: 0;
+}
+/*Styling the Header*/
+header{
+    background-color: lightblue;
+    /*background-color: skyblue;*/
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+    /*padding-right: 20px;*/
+    /*padding-right: 20px;*/
+    padding: 15px;
+}
+nav{
+    margin-left: 25%;
+    width: 450px;
+}
+.logo, nav, .navlink{
+    display: inline-block;
+}
+header *{
+    /*border: 1px solid red;*/
+}
+.navlink{
+    margin: 0 10%;
+    padding: 5px;
+}
+header a{
+    text-decoration: none;
+    color: darkgreen;
+}
+.logo{
+    color: brown;
+}
+.intro{
+    text-align: center;
+}
